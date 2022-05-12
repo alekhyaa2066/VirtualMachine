@@ -1,0 +1,58 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "**************************"
+        },
+
+        "resourceGroupName": {
+            "value":"VmRsg"
+        },
+
+        "resourceGroupLocation": {
+            "value": "westus"
+        },
+
+        "taskName": {
+            "value": "creatingVM"
+        },
+
+        "env": {
+            "value": "prod"
+        },
+        
+        "vnetName": {
+            "value": "VmVnet"
+        },
+
+        "virtualNetwork_CIDR": {
+            "value": "10.0.0.0/16"
+        },
+
+        "subnet1_CIDR": {
+            "value": "10.0.0.0/24"
+        },
+
+        "subnet2_CIDR": {
+            "value": "10.0.1.0/24"
+        },
+
+        "vmName": {
+            "value": "alex-vm1"
+        },
+
+        "adminPassword": {
+            "value": "AArunkumar@2066"
+        },
+
+        "adminUserName": {
+            "value": "alekhya"
+        },
+
+        "vmSize": {
+            "value": "Standard_DS1_v2"
+        }
+        
+    }
+}
