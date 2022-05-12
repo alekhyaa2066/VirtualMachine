@@ -1,0 +1,79 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus"
+        },
+
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "RDP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
+        },
+
+        "addressPrefixes": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+
+        "subnetName": {
+            "value": "subnet1"
+        },
+
+        "subnets": {
+            "value": [
+                {
+                    "name": "subnet1",
+                    "properties": {
+                        "addressPrefix": "10.0.0.0/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "armVm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+
+        "virtualMachineName": {
+            "value": "armVm"
+        },
+        "virtualMachineComputerName": {
+            "value": "armVm"
+        },
+
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+
+        "adminUsername": {
+            "value": "alekhya"
+        },
+        "adminPassword": {
+            "value": "AArunkumar@2066"
+        }
+    }
+}
