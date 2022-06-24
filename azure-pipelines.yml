@@ -16,5 +16,5 @@ steps:
     scriptType: 'batch'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      az deployment sub create --location westus --template-file main.bicep 
-      --parameters parameters.prod.json
+      az deployment sub create --location westus --template-file ./bicep/main.bicep 
+      --parameters ./bicep/parameters.prod.json
